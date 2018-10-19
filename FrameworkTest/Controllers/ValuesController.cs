@@ -12,7 +12,7 @@ namespace FrameworkTest.Controllers
         // GET api/values
         public IEnumerable<string> Get()
         {
-            return new string[] { "value1", "value2","automerge" };
+            return new string[] { "value1", "value2","automerge","2nd time" };
         }
 
         // GET api/values/5
