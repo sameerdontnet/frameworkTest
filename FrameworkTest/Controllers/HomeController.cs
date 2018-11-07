@@ -10,7 +10,7 @@ namespace FrameworkTest.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Title = "Home Page";
+            ViewBag.Title = "this is Home Page";
 
             return View();
         }
