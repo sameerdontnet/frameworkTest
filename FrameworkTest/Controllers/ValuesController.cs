@@ -1,37 +1,43 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net;
-using System.Net.Http;
-using System.Web.Http;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
 
-namespace FrameworkTest.Controllers
+namespace NetCoreTest.Controllers
 {
-    public class ValuesController : ApiController
+    [Route("api/[controller]")]
+    public class ValuesController : Controller
     {
         // GET api/values
+        [HttpGet]
         public IEnumerable<string> Get()
         {
-            return new string[] { "value1", "value2","automerge","2nd time"};
+            return new string[] { "value1", "value2" };
         }
 
         // GET api/values/5
+        [HttpGet("{id}")]
         public string Get(int id)
         {
             return "value";
         }
 
         // POST api/values
-        public void Post([FromBody]string value1)
+        [HttpPost]
+        public void Post([FromBody]string value)
         {
+            var b = "sameer";
         }
 
         // PUT api/values/5
-        public void Put(int id, [FromBody]string value1)
+        [HttpPut("{id}")]
+        public void Put(int id, [FromBody]string value)
         {
         }
 
         // DELETE api/values/5
+        [HttpDelete("{id}")]
         public void Delete(int id)
         {
         }
