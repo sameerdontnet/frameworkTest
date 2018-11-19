@@ -29,6 +29,7 @@ namespace FrameworkTest.Controllers
         // PUT api/values/5
         public void Put(int id, [FromBody]string value1)
         {
+            var put = ".net frame";
         }
 
         // DELETE api/values/5
