@@ -12,7 +12,7 @@ namespace FrameworkTest.Controllers
         // GET api/values
         public IEnumerable<string> Get()
         {
-            return new string[] { "value1", "value2","automerge","2nd time"};
+            return new string[] { "value1", "value2","automerge"};
         }
 
         // GET api/values/5
@@ -24,6 +24,7 @@ namespace FrameworkTest.Controllers
         // POST api/values
         public void Post([FromBody]string value1)
         {
+            var Post = ".net frame";
         }
 
         // PUT api/values/5
