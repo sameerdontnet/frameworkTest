@@ -24,13 +24,15 @@ namespace NetCoreTest.Controllers
         }
 
         // POST api/values
-        public void Post([FromBody]string value1)
+        [HttpPost]
+        public void Post([FromBody]string value)
         {
             var b = "sameer";
         }
 
         // PUT api/values/5
-        public void Put(int id, [FromBody]string value1)
+        [HttpPut("{id}")]
+        public void Put(int id, [FromBody]string value)
         {
         }
 
